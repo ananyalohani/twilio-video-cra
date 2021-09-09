@@ -27,7 +27,7 @@ function generateAccessToken(identity, room, config) {
   return token;
 }
 
-// handle POST requests from the client to send
+// handle GET requests from the client to send
 // the generated Twilio Access Token
 app.get('/api/video-token/:identity/:room', (req, res) => {
   // read the required environment variables from .env file
